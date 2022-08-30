@@ -1,0 +1,101 @@
+.product__detail-container {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    // Slider style
+    .product__slider {
+        position: relative;
+        width: 50%;
+        .slider-display {
+            margin-bottom: 50px;
+            img {
+                width: 60%;
+                height: 340px;
+                object-fit: cover;
+            }
+        }
+        .images_collage {
+            gap: 30px;
+            img {
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            }
+        }
+    }
+    // product detail
+    .product__detail {
+        width: 50%;
+        .product_detail-box {
+            width: 100%;
+            margin-bottom: 60px;
+            .product_title {
+                max-width: 407px;
+                width: 100%;
+                color: #354E57;
+                margin-bottom: 5px;
+            }
+            .stars {
+                gap: 6px;
+                .review {
+                    span {
+                        color: #354E57;
+                        text-decoration: underline;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .product_description {
+                margin-bottom: 10px;
+                h5 {
+                    color: #354E57;
+                }
+                p {
+                    color: #354E57;
+                }
+            }
+            h6 {
+                color: #354E57;
+                margin-bottom: 10px;
+            }
+            .controller {
+                gap: 30px;
+                .count_btn, .count {
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #354E57;
+                    outline: none;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: transparent;
+                }
+                .tertiary_btn {
+                    width: 100%;
+                    height: 40px;
+                    background-color: transparent;
+                    color: #354E57;
+                    font-weight: bold;
+                    border: 1px solid #354E57;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 740px) {
+        .product__slider {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .product__detail {
+            padding: 30px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .controller {
+            flex-wrap: wrap;
+        }
+    }
+}

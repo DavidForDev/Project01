@@ -1,0 +1,36 @@
+.search__container {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #EEF2F4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1111;
+    box-sizing: border-box;
+    padding: 0px 50px;
+   .search-box {
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+        .search {
+            width: 100%;
+            border-bottom: 1px solid #354E57;
+            box-sizing: border-box;
+            padding: 12px 25px;
+            color: #354E57;
+            background-color: transparent;
+        }::placeholder {
+            color: #354E57;
+        }
+        svg {
+            position: absolute;
+        }
+   }
+   .closer {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+   }
+}

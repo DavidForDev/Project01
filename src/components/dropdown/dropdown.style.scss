@@ -1,0 +1,19 @@
+.dropdown_container {
+    border: 1px solid #354E57;
+    box-sizing: border-box;
+    padding: 9px 15px;
+    display: inline-block;
+    .filter-title {
+        gap: 20px;
+    }
+    .dropdown_ul {
+        cursor: pointer;
+        overflow: auto;
+        margin: 10px 0;
+        flex-direction: column;
+        gap: 20px;
+        .dropdown_li {
+            gap: 20px;
+        }
+    }
+}

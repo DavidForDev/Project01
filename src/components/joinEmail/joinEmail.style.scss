@@ -1,0 +1,63 @@
+.join__email {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    right: 0;
+    background-color: #354e5794;
+    input {
+        max-width: 252px;
+        width: 100%;
+    }
+    .join_email-container {
+        width: 70%;
+        position: relative;
+        background-color: white;
+        .image {
+            max-width: 280px;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .join_detail {
+            box-sizing: border-box;
+            padding: 30px;
+            gap: 10px;
+            h2 {
+                width: 60%;
+                color: #354E57;
+            }
+            .medium {
+                color: #354E57;
+            }
+            p {
+                color: black;
+            }
+            span {
+
+            }
+        }
+        .closer {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+    }
+    @media screen and (max-width: 740px) {
+        .join_email-container {
+            width: 100%;
+            flex-direction: column-reverse;
+            .image {
+                img {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.login__in {
+    max-width: 350px;
+    margin-top: 50px;
+    width: 100%;
+    form {
+        width: 400px;
+        div {
+            margin-bottom: 25px;
+            gap: 10px;
+            input {
+                width: 100%;
+            }
+            a {
+                text-decoration: underline;
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.checkout__first {
+    width: 100%;
+    color: #354E57;
+    h6 {
+        margin-bottom: 20px;
+    }
+    .checkout_inputs {
+        width: 100%;
+        div {
+            margin-bottom: 10px;
+            gap: 30px;
+            input {
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 425px) {
+        .checkout_inputs {
+            div {
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+    }
+}

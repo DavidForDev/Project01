@@ -1,0 +1,18 @@
+.more__detail {
+    width: 100%;
+    .detail-box {
+        box-sizing: border-box;
+        padding: 10px 0;
+        h6 {
+            color: #354E57;
+        }
+        .detail-text {
+            box-sizing: border-box;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+    }
+    .detail-box:nth-child(1) {
+        border-bottom: 1px solid #354E57;
+    }
+}

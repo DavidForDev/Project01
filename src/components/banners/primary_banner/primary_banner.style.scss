@@ -1,0 +1,35 @@
+.primary__banner {
+    flex-wrap: wrap;
+    height: auto;
+    flex-basis: 100px;
+    .banner-title {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 50px;
+        div {
+            margin-bottom: 50px;
+            h2 {
+                margin-bottom: 10px;
+            }
+        }
+        .primary_btn:hover {
+            color: black !important;
+        }
+    }
+    img {
+        object-fit: cover;
+        width: 50%;
+        height: 440px;
+    }
+    @media screen and (max-width: 740px) {
+        .primary__banner {
+            flex-direction: row-reverse;
+        }
+        .banner-title {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
