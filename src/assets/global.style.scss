@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Work+Sans:wght@100;200;300;400&display=swap');
+@import './reset.css';
+
+body {
+    background-color: #EEF3F4;
+    padding-top: 120px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    z-index: 111;
+    position: fixed;
+    top: 0;
+}
+
+// ======= Text and they General className =======
+
+// === Font Bold ===
+
+.font {
+    &-bold {
+        font-weight: bold;
+    }
+    &-bold-100 {
+        font-weight: 100 !important;
+    }
+    &-bold-200 {
+        font-weight: 200 !important;
+    }
+    &-bold-300 {
+        font-weight: 300 !important;
+    }
+    &-bold-400 {
+        font-weight: 400 !important;
+    }
+    &-bold-500 {
+        font-weight: 500 !important;
+    }
+    &-bold-600 {
+        font-weight: 600 !important;
+    }
+    &-bold-700 {
+        font-weight: 700 !important;
+    }
+    &-bold-800 {
+        font-weight: 800 !important;
+    }
+    &-bold-900 {
+        font-weight: 900 !important;
+    }
+    // Upercase
+    &-uppercase {
+        text-transform: uppercase !important;
+    }
+    &-underline {
+        text-decoration: underline !important;
+    }
+}
+
+
+// === text [ center, left, right, justify, start, end ] ===
+
+.text {
+   &-center {
+        text-align: center;
+   }
+   &-left {
+        text-align: left;
+   }
+   &-right {
+        text-align: right;
+   }
+   &-justify {
+        text-align: justify;
+   }
+   &-start {
+        text-align: start;
+   }
+   &-end { 
+        text-align: end;
+   }
+}
+
+// === Font => h1 to h6 ===
+
+h1 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+}
+
+// === Font => p (paragraph) ===
+
+p {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+    &.medium {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: normal;
+    }
+    &.low {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: normal;
+    }
+}
+
+// ===================== displays =========================
+
+
+// === display > flex ===
+
+.flex {
+    display: flex;
+    // Justify content
+    &.justify-start	 {
+        justify-content: flex-start;
+    }
+    &.justify-end {
+        justify-content: flex-end;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+    &.justify-around {
+        justify-content: space-around;
+    }
+    &.justify-evenly {
+        justify-content: space-evenly;
+    }
+    // Justify self 
+    &.justify-self-auto {
+        justify-self: auto;
+    }
+    &.justify-self-start {
+        justify-self: start;
+    }
+    &.justify-self-end {
+        justify-self: end;
+    }
+    &.justify-self-center {
+        justify-self: center;
+    }
+    &.justify-self-stretch {
+        justify-self: stretch;
+    }
+    // align Content
+    &.align-start {
+        align-content: flex-start;
+    }
+    &.align-end {
+        align-content: flex-end;
+    }
+    &.align-center {
+        align-content: center;
+    }
+    &.align-between {
+        align-content: space-between;
+    }
+    &.align-around {
+        align-content: space-around;
+    }
+    // Align Items
+    &.align-items-start {
+        align-items: flex-start;
+    }
+    &.align-items-end {
+        align-items: flex-end;
+    }
+    &.align-items-center {
+        align-items: center;
+    }
+    &.align-items-baseline {
+        align-items: baseline;
+    }
+    // Flex-direction
+    &.direction-column {
+        flex-direction: column
+    }
+    &.direction-row {
+        flex-direction: row;
+    }
+    &.direction-col-reverse {
+        flex-direction: column-reverse;
+    }
+    &.direction-row-reverse {
+        flex-direction: row-reverse;
+    }
+    // Flex wra
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
+    &.flex-wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+    &.flex-nowrap {
+        flex-wrap: nowrap;
+    }
+}
+
+// ===================== box and Containers =========================
+
+// ===== Container =====
+
+.container {  
+    width: 100%;
+    margin: auto;
+    &-full {
+        max-width: 100%;
+    }
+    &-sm {
+        max-width: 640px;
+    }
+    &-md {
+        max-width: 740px;
+    }
+    &-lg {
+        max-width: 1024px;
+    }
+    &-xl {
+        max-width: 1280px;
+    }
+    &-2xl {
+        max-width: 1536px;
+    }
+}
+
+.black__opacity-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1111;
+    background-color: #2e2e2286;
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 640px !important;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .container {
+        max-width: 740px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1024px !important;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px !important;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .container {
+        max-width: 1280px !important; 
+        &-full {
+            max-width: 1024px !important;
+            margin: auto;
+        }
+    }
+}
+
+
+// ===================== Components [ button, inputs and so on ] =========================
+
+// ===== Primary Button =====
+
+.primary_btn {
+    color: #2E2E22;
+    border: 1px solid #354E57;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px 41px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.primary_btn:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.primary_btn:disabled {
+    background-color: #E4ECEF;
+    cursor: not-allowed;
+}
+
+// ===== Secondary Button =====
+
+.secondary_btn {
+    color: white;
+    border: 1px solid #956A53;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px 21px;
+    background-color: #A67744;
+    transition: 0.5s;
+}
+
+.secondary_btn:hover {
+    transition: 0.5s;
+    background-color: #9A6B39;
+}
+
+.secondary_btn:disabled {
+    background-color: transparent;
+    color: #9A6B39;
+}
+
+// ===== tertiary Button =====
+
+.tertiary_btn {
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 10px 31px;
+    background-color: #354E57;
+    transition: 0.5s;
+}
+
+.tertiary_btn:hover {
+    background-color: #2B434B;
+    transition: 0.5s;
+}
+
+.tertiary_btn:disabled {
+    background-color: #B9C1C4;
+    color: #354E57;
+    cursor: not-allowed;
+}
+
+// ===== primary input =====
+
+.primary_input {
+    border: 1px solid #BACAD1;
+    padding: 12px 10px 12px 10px;
+    border-radius: 3px;
+    &.error {
+        border: 1px solid #DE3B35;
+    }
+    &.error::placeholder {
+        color: #DE3B35;
+    }
+}
+
+.primary_input::placeholder {
+    color: #354E57;
+}
+
+.primary_input:disabled {
+    border: 1px solid #2E2E22;
+}
+
+.primary_input:disabled::placeholder { 
+    color: black;
+}
+
+
+////////////////// FOR PAGES
+
+.home__container {
+    width: 100% !important;
+    box-sizing: border-box;
+    .home_display {
+        position: relative;
+        margin-bottom: 60px;
+        .ownBanner {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            z-index: -11;
+        }
+        .container-title {
+            width: 100%;
+            color: #354E57;
+        }
+    }
+    .primary_detail-container {
+        display: inline-block;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        right: 0;
+        box-sizing: border-box;
+        padding: 30px;
+        .detail-container {
+            max-width: 400px;
+            width: 100%;
+            color: #354E57;
+            margin-bottom: 30px;
+            gap: 21px;
+            span {
+                width: max-content;
+                background-color: white;
+                box-sizing: border-box;
+                padding: 7px;
+            }
+        }
+    }
+    @media screen and (max-width: 740px) {
+        .primary_detail-container {
+            position:unset;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}
